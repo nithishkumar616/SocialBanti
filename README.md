@@ -1,0 +1,2 @@
+# SocialBanti
+Skill purpose app
