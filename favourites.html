@@ -1,0 +1,168 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Babai - Favourites</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f2f1; /* Light green shade */
+            color: #004d40; /* Dark green text */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 20px;
+            background-color: #81c784; /* Darker green header */
+            border-bottom: 1px solid #388e3c;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #004d40;
+        }
+        .header .menu {
+            display: flex;
+            align-items: center;
+        }
+        .header .menu a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004d40;
+            font-size: 16px;
+        }
+        .header .menu a:hover {
+            color: #2e7d32; /* Highlight green on hover */
+        }
+        
+        .favourites-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px;
+        }
+
+        .favourite-item {
+            background-color: #c8e6c9; /* Light green */
+            padding: 20px;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .favourite-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .favourite-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .favourite-item h3 {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #004d40; /* Dark green */
+        }
+
+        .favourite-item p {
+            font-size: 14px;
+            color: #004d40;
+            margin-top: 8px;
+        }
+
+        .back-link {
+            font-size: 16px;
+            color: #004d40;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 30px;
+            display: inline-block;
+            padding-left: 10px;
+        }
+
+        .back-link:hover {
+            color: #2e7d32;
+        }
+
+        footer {
+            background-color: #81c784; /* Darker green footer */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #388e3c;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #004d40;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .favourites-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>SocialBanti</h1>
+        <div class="menu">
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\home.html">Home</a>
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\upload.html">Upload</a>
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\favourites.html">Favourites</a>
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\profiles.html">Profile</a>
+        </div>
+    </div>
+
+    <!-- Back Link Below the Header in the Body -->
+    <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\home.html" class="back-link">Back</a>
+
+    <div class="favourites-container">
+        <!-- Favourite Item 1 -->
+        <div class="favourite-item">
+            <img src="https://via.placeholder.com/800x300" alt="Favourite 1">
+            <h3>Post 1: Modern Art Exploration</h3>
+            <p>A deep dive into innovative art movements and their impact on society.</p>
+        </div>
+
+        <!-- Favourite Item 2 -->
+        <div class="favourite-item">
+            <img src="https://via.placeholder.com/800x300" alt="Favourite 2">
+            <h3>Post 2: Graphic Design Tips</h3>
+            <p>Tips and tricks for perfecting your graphic design skills for branding.</p>
+        </div>
+
+        <!-- Favourite Item 3 -->
+        <div class="favourite-item">
+            <img src="https://via.placeholder.com/800x300" alt="Favourite 3">
+            <h3>Post 3: Video Production Insights</h3>
+            <p>Behind-the-scenes strategies for producing stunning videos for social media.</p>
+        </div>
+
+        <!-- Favourite Item 4 -->
+        <div class="favourite-item">
+            <img src="https://via.placeholder.com/800x300" alt="Favourite 4">
+            <h3>Post 4: Digital Art Techniques</h3>
+            <p>Learn digital tools and tips for producing mesmerizing digital artwork.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Skill Babai. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Post - Skill Babai</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f2f1; /* Light green background */
+            color: #004d40; /* Dark green text */
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 20px;
+            background-color: #81c784; /* Darker green header */
+            border-bottom: 1px solid #388e3c; /* Dark green border */
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #004d40; /* Dark green text */
+        }
+
+        .header .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .menu a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004d40; /* Dark green text */
+            font-size: 16px;
+        }
+
+        .header .menu a:hover {
+            color: #2e7d32; /* Highlight green on hover */
+        }
+
+        /* Adjusted Back Link Position */
+        .back-link {
+            font-size: 16px;
+            color: #388e3c; /* Dark green color */
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            display: block;
+            padding-left: 10px; /* Shift it slightly to the right */
+        }
+
+        .back-link:hover {
+            color: #2e7d32; /* Highlighted green for hover */
+        }
+
+        .upload-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #c8e6c9; /* Light green */
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .upload-container h2 {
+            margin-bottom: 20px;
+            color: #004d40; /* Dark green for the heading */
+        }
+
+        .input-group {
+            margin: 10px 0;
+        }
+
+        .input-group input,
+        .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            background-color: #388e3c; /* Dark green input fields */
+            border: 1px solid #004d40; /* Dark green border */
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+        }
+
+        .input-group input[type="file"] {
+            padding: 0;
+        }
+
+        .input-group input[type="file"]:focus,
+        .input-group textarea:focus {
+            outline: none;
+            border-color: #81c784; /* Lighter green border for focus */
+        }
+
+        .upload-btn {
+            padding: 10px 20px;
+            background-color: #388e3c; /* Dark green button */
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        .upload-btn:hover {
+            background-color: #2e7d32; /* Lighter green on hover */
+        }
+
+        footer {
+            background-color: #81c784; /* Dark green footer */
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #388e3c; /* Dark green border */
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #004d40; /* Dark green text */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>SocialBanti</h1>
+        <div class="menu">
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\home.html">Home</a>
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\upload.html">Upload</a>
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\favourites.html">Favourites</a>
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\profiles.html">Profile</a>
+        </div>
+    </div>
+
+    <!-- Back Link Below the Header -->
+    <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\home.html" class="back-link">Back</a>
+
+    <!-- Upload Form Section -->
+    <div class="upload-container">
+        <h2>Upload a New Post</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="input-group">
+                <input type="file" name="postFile" accept="image/*, video/*" required>
+            </div>
+            <div class="input-group">
+                <input type="text" name="postTitle" placeholder="Post Title" required>
+            </div>
+            <div class="input-group">
+                <textarea name="postDescription" rows="5" placeholder="Post Description" required></textarea>
+            </div>
+            <button type="submit" class="upload-btn">Upload Post</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Skill Babai. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

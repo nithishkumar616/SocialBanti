@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Babai - Reels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f2f1; /* Light green background */
+            color: #004d40; /* Dark green text */
+            overflow-x: hidden;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 20px;
+            background-color: #81c784; /* Darker green header */
+            border-bottom: 1px solid #388e3c; /* Dark green border */
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #004d40; /* Dark green text */
+        }
+
+        .header .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .menu a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004d40; /* Dark green text */
+            font-size: 16px;
+        }
+
+        .header .menu a:hover {
+            color: #2e7d32; /* Highlight green on hover */
+        }
+
+        /* Back Link */
+        .back-link {
+            font-size: 16px;
+            color: #388e3c; /* Dark green color */
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            display: block;
+            padding-left: 10px; /* Shift it slightly to the right */
+        }
+
+        .back-link:hover {
+            color: #2e7d32; /* Highlighted green for hover */
+        }
+
+        .reels-container {
+            position: none;
+            overflow-y: none;
+            scroll-behavior: smooth;
+            margin-top: 10px; /* Space for the back link */
+        }
+
+        .reel {
+            position: none;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #c8e6c9; /* Light green */
+            padding: 20px;
+        }
+
+        .reel video {
+            width: 90%;
+            height: auto;
+            max-height: 80%;
+            object-fit: cover;
+            border-radius: 5px;
+            background-color: #121212;
+        }
+
+        .post-actions {
+            position: absolute;
+            right: 20px;
+            bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .post-actions button {
+            padding: 12px;
+            background-color: #004d40;
+            border: 1px solid #2e7d32;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+        }
+
+        .post-actions button:hover {
+            background-color: #2e7d32;
+        }
+
+        .account-info {
+            display: block;
+            text-align: left;
+            width: 100%;
+            padding: 10px;
+        }
+
+        .account-info .profile-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .account-info .profile-logo img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .account-info .profile-name {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .account-info .profile-description {
+            font-style: italic;
+            color: #555;
+            font-size: 1em;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .reel {
+                padding: 10px;
+            }
+            .reel video {
+                max-height: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>SocialBanti</h1>
+        <div class="menu">
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\home.html">Home</a>
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\upload.html">Upload</a>
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\favourites.html">Favourites</a>
+            <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\profiles.html">Profile</a>
+        </div>
+    </div>
+
+    <!-- Back Link Below the Header -->
+    <a href="C:\Users\Lenovo\Desktop\SKILL_BABAI\code\home.html" class="back-link">Back</a>
+
+    <div class="reels-container" id="reelsContainer" tabindex="0">
+        <!-- Reel 1 -->
+        <div class="reel">
+            <video controls>
+                <source src="your-video-path/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="post-actions">
+                <button>👍</button>
+                <button>🔗</button>
+                <button>💬</button>
+                <button>💾</button>
+            </div>
+            <div class="account-info">
+                <div class="profile-info">
+                    <div class="profile-logo">
+                        <img src="your-profile-image-path/logo.png" alt="Profile Logo">
+                    </div>
+                    <div class="text">
+                        <p class="profile-name">John Doe</p>
+                        <p class="profile-description">Enjoying this amazing post!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+               <div class="reel">
+            <video controls>
+                <source src="your-video-path/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="post-actions">
+                <button>👍</button>
+                <button>🔗</button>
+                <button>💬</button>
+                <button>💾</button>
+            </div>
+            <div class="account-info">
+                <div class="profile-info">
+                    <div class="profile-logo">
+                        <img src="your-profile-image-path/logo.png" alt="Profile Logo">
+                    </div>
+                    <div class="text">
+                        <p class="profile-name">John Doe</p>
+                        <p class="profile-description">Enjoying this amazing post!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <div class="reel">
+            <video controls>
+                <source src="your-video-path/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="post-actions">
+                <button>👍</button>
+                <button>🔗</button>
+                <button>💬</button>
+                <button>💾</button>
+            </div>
+            <div class="account-info">
+                <div class="profile-info">
+                    <div class="profile-logo">
+                        <img src="your-profile-image-path/logo.png" alt="Profile Logo">
+                    </div>
+                    <div class="text">
+                        <p class="profile-name">John Doe</p>
+                        <p class="profile-description">Enjoying this amazing post!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <div class="reel">
+            <video controls>
+                <source src="your-video-path/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="post-actions">
+                <button>👍</button>
+                <button>🔗</button>
+                <button>💬</button>
+                <button>💾</button>
+            </div>
+            <div class="account-info">
+                <div class="profile-info">
+                    <div class="profile-logo">
+                        <img src="your-profile-image-path/logo.png" alt="Profile Logo">
+                    </div>
+                    <div class="text">
+                        <p class="profile-name">John Doe</p>
+                        <p class="profile-description">Enjoying this amazing post!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="reel">
+            <video controls>
+                <source src="your-video-path/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="post-actions">
+                <button>👍</button>
+                <button>🔗</button>
+                <button>💬</button>
+                <button>💾</button>
+            </div>
+            <div class="account-info">
+                <div class="profile-info">
+                    <div class="profile-logo">
+                        <img src="your-profile-image-path/logo.png" alt="Profile Logo">
+                    </div>
+                    <div class="text">
+                        <p class="profile-name">John Doe</p>
+                        <p class="profile-description">Enjoying this amazing post!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <div class="reel">
+            <video controls>
+                <source src="your-video-path/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="post-actions">
+                <button>👍</button>
+                <button>🔗</button>
+                <button>💬</button>
+                <button>💾</button>
+            </div>
+            <div class="account-info">
+                <div class="profile-info">
+                    <div class="profile-logo">
+                        <img src="your-profile-image-path/logo.png" alt="Profile Logo">
+                    </div>
+                    <div class="text">
+                        <p class="profile-name">John Doe</p>
+                        <p class="profile-description">Enjoying this amazing post!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <div class="reel">
+            <video controls>
+                <source src="your-video-path/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="post-actions">
+                <button>👍</button>
+                <button>🔗</button>
+                <button>💬</button>
+                <button>💾</button>
+            </div>
+            <div class="account-info">
+                <div class="profile-info">
+                    <div class="profile-logo">
+                        <img src="your-profile-image-path/logo.png" alt="Profile Logo">
+                    </div>
+                    <div class="text">
+                        <p class="profile-name">John Doe</p>
+                        <p class="profile-description">Enjoying this amazing post!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Reels... -->
+
+    </div>
+
+    <script>
+        const userProfile = {
+            name: "John Doe",
+            description: "Enjoying this amazing post!",
+            logoUrl: "your-profile-image-path/logo.png",
+        };
+
+        function updateProfileInfo() {
+            const accountInfoElements = document.querySelectorAll('.account-info');
+
+            accountInfoElements.forEach((accountInfo) => {
+                const profileName = accountInfo.querySelector('.profile-name');
+                const profileDescription = accountInfo.querySelector('.profile-description');
+                const profileLogo = accountInfo.querySelector('.profile-logo img');
+
+                // Insert data into each account info block
+                profileName.textContent = userProfile.name;
+                profileDescription.textContent = userProfile.description;
+                profileLogo.src = userProfile.logoUrl;
+                profileLogo.alt = `${userProfile.name}'s Profile Logo`; // Add alt text for accessibility
+            });
+        }
+
+        updateProfileInfo();  // Update profile data when the page loads
+
+        const reelsContainer = document.getElementById('reelsContainer');
+        const reels = document.querySelectorAll('.reel');
+        let currentReelIndex = 0;
+
+        function scrollToReel(index) {
+            if (index < 0 || index >= reels.length) return;
+            currentReelIndex = index;
+            reelsContainer.scrollTo({
+                top: currentReelIndex * window.innerHeight,
+                behavior: 'smooth'
+            });
+        }
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'PageDown') {
+                scrollToReel(currentReelIndex + 1);
+                event.preventDefault();
+            } else if (event.key === 'PageUp') {
+                scrollToReel(currentReelIndex - 1);
+                event.preventDefault();
+            }
+        });
+
+        let startY;
+        reelsContainer.addEventListener('touchstart', (event) => {
+            startY = event.touches[0].clientY;
+        });
+
+        reelsContainer.addEventListener('touchmove', (event) => {
+            const touchY = event.touches[0].clientY;
+            const deltaY = startY - touchY;
+
+            if (deltaY > 50) {
+                scrollToReel(currentReelIndex + 1);
+                startY = touchY;
+            } else if (deltaY < -50) {
+                scrollToReel(currentReelIndex - 1);
+                startY = touchY;
+            }
+
+            event.preventDefault();
+        });
+
+        reelsContainer.focus();
+    </script>
+
+</body>
+</html>
